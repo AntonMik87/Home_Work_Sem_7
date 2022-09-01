@@ -1,4 +1,5 @@
-﻿// Console.Clear();
+﻿// В двумерном массиве показать позиции числа, заданного пользователем или указать, что такого элемента нет
+Console.Clear();
 int x = int.Parse(Console.ReadLine() ?? "0");
 int[,] matr = new int[5, 5];
 for (int i = 0; i < matr.GetLength(0); i++)
