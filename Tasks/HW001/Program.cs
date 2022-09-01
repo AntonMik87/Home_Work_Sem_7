@@ -20,7 +20,7 @@ for (int i = 0; i < matr.GetLength(0); i++)
         {
             int index1 = i;
             int index2 = j;
-            Console.Write($"Позиция: {index1},{index2} ");
+            Console.Write($"Позиция: {x} = Строка: {index1}, Стобец: {index2} ");
             return;
         }
    }
