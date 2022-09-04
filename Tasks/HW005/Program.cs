@@ -1,67 +1,39 @@
 ﻿// // Написать программу, которая в двумерном массиве заменяет строки на столбцы
-// // или сообщить, что это невозможно (в случае, если матрица не квадратная).
-// Console.Clear();
+// или сообщить, что это невозможно (в случае, если матрица не квадратная).
+Console.Clear();
 
-// int[,] array = new int[5, 5];
+int[,] array = new int[5, 5];
 
-// for (int i = 0; i < array.GetLength(0); i++)
-// {
-//     for (int j = 0; j < array.GetLength(1); j++)
-//     {
-//         array[i, j] = new Random().Next(1, 10);
-//         Console.Write($" {array[i, j]} ");
-//     }
-//     Console.WriteLine();
-// }
-
-// Console.WriteLine();
-
-// for (int i = 0; i < array.GetLength(1); i++)
-// {
-//     for (int j = 0; j < array.GetLength(1); j++)
-//     {
-//         Console.Write(array[j, i] + " ");
-//     }
-//     Console.WriteLine();
-// }
-
-// Console.WriteLine();
-
-// int[,] mass = new int[array.GetLength(0), array.GetLength(1)];
-// for (int i = 0; i < mass.GetLength(0); i++)
-// {
-//     for (int j = 0; j < mass.GetLength(1); j++)
-//     {
-//         mass[i, j] = array[j, i];
-//     Console.WriteLine(mass[i, j]);
-//     }
-//     Console.WriteLine();
-// }
-
-
-
-int button = 2;
-int ied = 8;
-void setup()
-        {
-            ParallelExecutionMode(Led, output);
-            ParallelExecutionMode(button, input);
-        }
-void loop()
-if digltaRead(button) = high
-
-int sv = 10;
-int kn = 8;
-void setur()
+for (int i = 0; i < array.GetLength(0); i++)
 {
-ParallelExecutionMode(sv,output);
-ParallelExecutionMode(kn,input);
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        array[i, j] = new Random().Next(1, 10);
+        Console.Write($" {array[i, j]} ");
+    }
+    Console.WriteLine();
 }
 
-int t=1000;
-void loop()
-digitalWrite(sv,high);
-delay(500);
-digital(sv,low)
-delay(t);
-t=t+500;
+Console.WriteLine();
+
+for (int i = 0; i < array.GetLength(1); i++)
+{
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        Console.Write(array[j, i] + " ");
+    }
+    Console.WriteLine();
+}
+
+Console.WriteLine();
+
+int[,] mass = new int[array.GetLength(0), array.GetLength(1)];
+for (int i = 0; i < mass.GetLength(0); i++)
+{
+    for (int j = 0; j < mass.GetLength(1); j++)
+    {
+        mass[i, j] = array[j, i];
+    Console.WriteLine(mass[i, j]);
+    }
+    Console.WriteLine();
+}
