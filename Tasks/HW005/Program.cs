@@ -33,7 +33,7 @@ for (int i = 0; i < mass.GetLength(0); i++)
     for (int j = 0; j < mass.GetLength(1); j++)
     {
         mass[i, j] = array[j, i];
-    Console.WriteLine(mass[i, j]);
+        Console.WriteLine(mass[i, j]);
     }
     Console.WriteLine();
 }
